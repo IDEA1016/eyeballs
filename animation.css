@@ -1,0 +1,8 @@
+.eye {
+  transition: all 0.2s ease-in-out;
+}
+
+html:active .eye {
+  height: 0px;
+  border-bottom: 2px solid rgba(212, 83, 32, 0.931);
+}

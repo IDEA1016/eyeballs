@@ -1,36 +1,45 @@
 @import "reset.css";
+@import "animation.css";
 
 body {
-  background-color: brown;
+  background-color: darkorange;
+  display: flex;
+  justify-content: center;
+
+  /* 드래그 방지 */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .eyes {
   position: absolute;
+  width: fit-content;
   top: 50%;
   transform: translateY(-50%);
-  width: 100%;
-  text-align: center;
 }
 
 .eye {
-  width: 250px;
-  height: 100px;
-  background: #fff;
-  border-radius: 50%;
   display: inline-block;
+  width: 200px;
+  height: 100px;
+  background-color: white;
   margin: 60px;
-  position: relative;
+  border-radius: 50%;
   overflow: hidden;
+  position: relative;
+  border-bottom: 15px solid rgba(204, 84, 37, 0.931);
 }
 
-.ball {
+.pupil {
   width: 40px;
   height: 40px;
-  background-color: black;
-  border: 20px solid rgb(54, 54, 54);
+  background-color: rgb(5, 5, 139);
+  border: 20px solid rgb(54, 54, 206);
   border-radius: 50%;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  position: absolute;
 }
